@@ -1,0 +1,25 @@
+@import url(/style/header.css);
+@import url(/style/section.css);
+@import url(/style/footer.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html { 
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --headerText: rgba(0,0,0,.87);
+    --buttonText: #3c4043;
+    --footerText: #70757a;
+}
+
+.dark-mode:root {
+    --headerText: white;
+    --buttonText: #e8eaed;
+    --footerText: #9aa0a6;
+}
