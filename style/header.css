@@ -1,2 +1,59 @@
 
 
+.header {
+    width: 100%;
+    height: auto;
+}
+.content__header {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    column-gap: 2.5rem;
+    padding: 1.4rem 1.8rem;
+}
+.gmail__content, .imagens__content {
+    color: var(--headerText);
+    font-size: 1.4rem;
+    
+    text-decoration: none;
+    cursor: pointer;
+}
+.gmail__content:hover, .imagens__content:hover {
+    text-decoration: underline;
+}
+.nav__content {
+    width: 40px;
+    height: 40px;
+    
+    cursor: pointer;
+    
+    transition: all 0.2s;
+}
+.nav_icon {
+    width: 40px;
+    height: 40px;
+    
+    padding: 8px;
+    border-radius: 50%;
+}
+.nav_icon:hover {
+    background-color: rgba(60,64,67,.08);
+}
+.user__content {
+    width: 32px;
+    height: 32px;
+
+    background-image: url(/assets/perfil.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

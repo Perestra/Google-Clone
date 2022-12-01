@@ -1,6 +1,7 @@
 @import url(/style/header.css);
 @import url(/style/section.css);
 @import url(/style/footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 
 * {
     margin: 0;
@@ -11,11 +12,28 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
+body {
+    width: 100%;
+    height: 100vh;
+
+    font-family: arial,sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-flow: column;
+}
 
 :root {
     --headerText: rgba(0,0,0,.87);
     --buttonText: #3c4043;
     --footerText: #70757a;
+    --borderInput: #dfe1e5;
+    --white: white;
 }
 
 .dark-mode:root {
