@@ -1,0 +1,44 @@
+
+
+.config_expand {
+    position: absolute;
+    top: 5px;
+    right: 18px;
+
+    width: auto; 
+
+    border-radius: 8px;
+    background: var(--backgroundMenuApp);
+
+    box-shadow: var(--shadowDarkMode);
+
+    display: none;
+}
+.darkmode__config {
+    margin: 5px 0;
+    padding: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    column-gap: 13px;
+    transition: all 0.2s;
+}
+.darkmode__config:hover {
+    background-color: var(--bgDarkMode);
+}
+.darkmode__config p {
+    font-size: 14px;
+    color: var(--defaultText);
+}
+.icon__darkmode {
+    width: 24px;
+    height: 24px;
+
+    background: var(--btnMode);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
