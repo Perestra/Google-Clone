@@ -2,6 +2,7 @@
 @import url(/style/section.css);
 @import url(/style/footer.css);
 @import url(/style/userExpandedContent.css);
+@import url(/style/menuExpandedContent.css);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 
 * {
