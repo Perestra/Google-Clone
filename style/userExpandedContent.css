@@ -1,0 +1,133 @@
+
+
+.user_expand {border: 1px solid;
+    width: 372px; 
+    height: auto;
+
+    position: absolute;
+    top: 0px; 
+    right: 18px; 
+    
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,.2);
+    background: var(--white);
+    margin-top: 57px; 
+
+    box-shadow: 0px 1px 2px 0px rgb(60 64 67 / 30%), 0px 2px 6px 2px rgb(60 64 67 / 15%);
+
+    display: block;
+}
+
+.profile__user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 20px;
+}
+.img__user {
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+    margin-bottom: 15px;
+
+    background-image: url(/assets/perfil.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+.fa-camera {
+    color: var(--buttonText);
+    font-size: 15px;
+    
+    padding: 5px;
+    border-radius: 50%;
+    background-color: var(--white);
+    cursor: pointer;
+}
+.name__user {
+    color: #202124;
+    font-size: 16px;
+    letter-spacing: .1px;
+}
+.social__user {
+    display: flex;
+    column-gap: 12px;
+
+    margin-bottom: 16px;
+}
+.fa-brands {
+    font-size: 16px;
+}
+.social__user a:nth-child(1) {
+    color: #0e76a8;
+}
+.social__user a:nth-child(2) {
+    color: #171515;
+}
+.social__user a:nth-child(3) {
+    color: #bc1888;
+}
+
+.add_account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px 0;
+    column-gap: 18px;
+
+    border-top: 1px solid #dadce0;
+    border-bottom: 1px solid #dadce0;
+
+    cursor: pointer;
+}
+.fa-user-plus {
+    font-size: 15px;
+    color: var(--buttonText);
+}
+.add_account p {
+    color: var(--buttonText);
+    font-size: 14px;
+    letter-spacing: .25px;
+}
+
+.logout_account {
+    text-align: center;
+    
+    padding: 15px 0;
+    border-bottom: 1px solid #dadce0;
+}
+.button__logout {
+    color: var(--buttonText);
+    font-size: 14px;
+    letter-spacing: .25px;
+
+    border-radius: 4px;
+    padding: 8px 24px;
+
+    border: 1px solid #dadce0;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.legal_terms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    column-gap: 10px;
+    padding: 15px 0;
+}
+.legal_terms a {
+    font-size: 12px;
+    color: var(--buttonText);
+    text-decoration: none;
+    cursor: pointer;
+}
