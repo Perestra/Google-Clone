@@ -20,6 +20,8 @@ body {
 
     font-family: arial,sans-serif;
     font-size: 14px;
+
+    background: var(--bgBody);
 }
 
 .container {
@@ -31,15 +33,72 @@ body {
 }
 
 :root {
-    --headerText: rgba(0,0,0,.87);
+    --defaultText: rgba(0,0,0,.87);
     --buttonText: #3c4043;
     --footerText: #70757a;
+    --bgBody: #FFF;
+
+    --menuIcon: #5f6368;
+    --searchIcon: #9aa0a6;
+
     --borderInput: #dfe1e5;
-    --white: white;
+
+    --backgroundButtonSection: #f8f9fa;
+    --borderButtonSection: #f8f9fa;
+    --backgroundButtonSectionHover: #f8f9fa;
+    --borderButtonSectionHover: #dadce0;
+    --colorTextButton: #3c4043;
+    --colorTextButtonHover: #202124;
+    --shadowButtonHover: 0 1px 1px rgb(0 0 0 / 10%);
+
+    --backgroundFooter: #f2f2f2;
+    --borderBottomFotter: #dadce0;
+    
+    --backgroundMenuApp: white;
+    --borderMenuApp: rgba(0,0,0,.2);
+    --shadowMenuApp: 0px 1px 2px 0px rgb(60 64 67 / 30%), 0px 2px 6px 2px rgb(60 64 67 / 15%);
+    --iconHover: #e8f0fe;
+
+    --backgroundButtonMenuAppHover: #f8fbff;
+    --borderButtonMenuApp: #dadce0;
+    --borderButtonMenuAppHover: #cce0fc;
+    --colorTextButtonMenuApp: #1a73e8;
+    
+    --github: #171515;
+    --addAccountbackgroundHover: #f7f8f8;
 }
 
 .dark-mode:root {
-    --headerText: white;
+    --defaultText: white;
     --buttonText: #e8eaed;
     --footerText: #9aa0a6;
+    --bgBody: #202124;
+
+    --menuIcon: rgba(255,255,255,0.87);
+
+    --borderInput: #5f6368;
+
+    --colorTextButton: #e8eaed;
+    --backgroundButtonSection: #303134;
+    --borderButtonSection: #303134;
+    --colorTextButtonHover: #e8eaed;
+    --backgroundButtonSectionHover: #303134;
+    --borderButtonSectionHover: #5f6368;
+    --shadowButtonHover: 0 1px 3px rgb(23 23 23 / 24%);
+
+    --backgroundFooter: #171717;
+    --borderBottomFotter: #3c4043;
+
+    --backgroundMenuApp: #2d2e30;
+    --borderMenuApp: rgba(0,0,0,.2);
+    --shadowMenuApp: 0 -1px 2px 0 rgb(0 0 0 / 30%), 0 -2px 6px 2px rgb(0 0 0 / 15%);
+    --iconHover: #28292c;
+
+    --backgroundButtonMenuAppHover: #3c4043;
+    --borderButtonMenuApp: #5f6368;
+    --borderButtonMenuAppHover: #5f6368;
+
+    --github: #fff;
+    --addAccountbackgroundHover: rgba(232,234,237,.04);
+
 }

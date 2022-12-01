@@ -9,13 +9,13 @@
     right: 18px; 
     
     border-radius: 8px;
-    border: 1px solid rgba(0,0,0,.2);
-    background: var(--white);
+    border: 1px solid var(--borderMenuApp);
+    background: var(--backgroundMenuApp);
     margin-top: 57px; 
 
-    box-shadow: 0px 1px 2px 0px rgb(60 64 67 / 30%), 0px 2px 6px 2px rgb(60 64 67 / 15%);
+    box-shadow: var(--shadowMenuApp);
 
-    display: none;
+    display: block;
 }
 
 .profile__user {
@@ -47,11 +47,11 @@
     
     padding: 5px;
     border-radius: 50%;
-    background-color: var(--white);
+    background-color: var(--borderBottomFotter);
     cursor: pointer;
 }
 .name__user {
-    color: #202124;
+    color: var(--colorTextButtonHover);
     font-size: 16px;
     letter-spacing: .1px;
 
@@ -70,7 +70,7 @@
     color: #0e76a8;
 }
 .social__user a:nth-child(2) {
-    color: #171515;
+    color: var(--github);
 }
 .social__user a:nth-child(3) {
     color: #bc1888;
@@ -84,10 +84,13 @@
     padding: 15px 0;
     column-gap: 18px;
 
-    border-top: 1px solid #dadce0;
-    border-bottom: 1px solid #dadce0;
+    border-top: 1px solid var(--borderButtonMenuApp);
+    border-bottom: 1px solid var(--borderButtonMenuApp);
 
     cursor: pointer;
+}
+.add_account:hover {
+    background: var(--addAccountbackgroundHover);
 }
 .fa-user-plus {
     font-size: 15px;
@@ -103,7 +106,7 @@
     text-align: center;
     
     padding: 15px 0;
-    border-bottom: 1px solid #dadce0;
+    border-bottom: 1px solid var(--borderBottomFotter);
 }
 .button__logout {
     color: var(--buttonText);
@@ -113,12 +116,14 @@
     border-radius: 4px;
     padding: 8px 24px;
 
-    border: 1px solid #dadce0;
+    border: 1px solid var(--borderBottomFotter);
     outline: none;
     background: none;
     cursor: pointer;
 }
-
+.button__logout:hover {
+    background-color: var(--addAccountbackgroundHover);
+}
 .legal_terms {
     display: flex;
     align-items: center;
