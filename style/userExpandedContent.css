@@ -15,7 +15,7 @@
 
     box-shadow: var(--shadowMenuApp);
 
-    display: block;
+    display: none;
 }
 
 .profile__user {

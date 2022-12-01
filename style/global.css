@@ -3,6 +3,7 @@
 @import url(/style/footer.css);
 @import url(/style/userExpandedContent.css);
 @import url(/style/menuExpandedContent.css);
+@import url(/style/configExpandedContent.css);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 
 * {
@@ -66,6 +67,10 @@ body {
     
     --github: #171515;
     --addAccountbackgroundHover: #f7f8f8;
+
+    --btnMode: url('/assets/btn-light.svg');
+    --shadowDarkMode: 0 2px 10px 0 rgb(0 0 0 / 20%);
+    --bgDarkMode: rgba(0,0,0,0.1);
 }
 
 .dark-mode:root {
@@ -101,4 +106,7 @@ body {
     --github: #fff;
     --addAccountbackgroundHover: rgba(232,234,237,.04);
 
+    --btnMode: url('/assets/btn-night.svg');
+    --shadowDarkMode: 1px 1px 15px 0px #171717;
+    --bgDarkMode: rgba(255,255,255,0.1);
 }

@@ -3,6 +3,8 @@
 .footer {
     width: 100%;
     height: auto;
+
+    position: relative;
 }
 .content__footer {
     width: 100%;
