@@ -7,6 +7,7 @@
     position: absolute;
     top: 0px; 
     right: 18px; 
+    z-index: 1;
     
     border-radius: 8px;
     border: 1px solid var(--borderMenuApp);
@@ -17,6 +18,9 @@
 
     display: none;
     overflow: hidden scroll;
+}
+.menu_expand.active {
+    display: block;
 }
 .app__menu {
     width: 100%;
@@ -73,7 +77,6 @@
 }
 .app p {
    color: var(--colorTextButtonHover);
-   font-size: 14px;
    margin-bottom: 5px;
 }
 
@@ -87,7 +90,6 @@
     border-radius: 4px;
 
     color: var(--colorTextButtonMenuApp);
-    font-size: 14px;
     padding: 10px 24px;
 
     cursor: pointer;
