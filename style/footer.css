@@ -14,7 +14,6 @@
 }
 .country__content {
     color: var(--footerText);
-    font-size: 14px;
     
     border-bottom: 1px solid var(--borderBottomFotter);
     padding: 15px 30px;
@@ -36,7 +35,6 @@
 }
 .about__info a, .config__info a, .config__info p {
     color: var(--footerText);
-    font-size: 14px;
 
     text-decoration: none;
     cursor: pointer;
