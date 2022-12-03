@@ -19,7 +19,7 @@
 }
 .gmail__content, .imagens__content {
     color: var(--defaultText);
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     
     text-decoration: none;
     cursor: pointer;
