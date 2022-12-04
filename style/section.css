@@ -14,8 +14,8 @@
 }
 
 .logo__content {
-    width: 290px;
-    height: 100px;
+    width: 350px;
+    height: auto;
 
     background-image: url(/assets/google-logo.png);
     background-repeat: no-repeat;
