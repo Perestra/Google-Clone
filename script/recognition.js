@@ -8,9 +8,13 @@ recognition.lang = 'pt-BR'
 
 recognitionButton.addEventListener('click', () => {
     recognition.start()
-    console.log('iniciou')
     recognition.onresult = e => {
         console.log(e.results[0][0])
+        // const value = e.results[0][0]
+        // createSearch(value)
+        // historyList.push(value)
+        // localStorage.setItem('Busca', JSON.stringify(historyList))
+        // location.href = searchUrl.concat(value.split(' ').join('+'))
     }
-    // search.innerHTML = 
+    recognition.stop()
 })
