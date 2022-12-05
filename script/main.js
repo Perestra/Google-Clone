@@ -53,12 +53,14 @@ function handleOnFocus() {
 function handleOnBlur() {
     contentSection.classList.remove('active')
 }
+
+
 function handleKeyDown(event) {
     if(event.key === 'Enter') {
         const value = event.target.value
         createSearch(value)
         historyList.push(value)
-        // location.href = searchUrl.concat(value.split(' ').join('+'))
+        location.href = searchUrl.concat(value.split(' ').join('+'))
         localStorage.setItem('Busca', JSON.stringify(historyList))
         search.value = '' 
     }
