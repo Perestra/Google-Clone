@@ -53,8 +53,6 @@ function handleOnFocus() {
 function handleOnBlur() {
     contentSection.classList.remove('active')
 }
-
-
 function handleKeyDown(event) {
     if(event.key === 'Enter') {
         const value = event.target.value
@@ -106,3 +104,4 @@ historyList.forEach(value => {
     createSearch(value)
 })
 
+ 
