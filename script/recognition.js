@@ -10,9 +10,7 @@ recognitionButton.addEventListener('click', () => {
     recognition.start()
     recognition.onresult = e => {
         const value = e.results[0][0].transcript
-        createSearch(value)
-        historyList.push(value)
-        localStorage.setItem('Busca', JSON.stringify(historyList))
-        location.href = searchUrl.concat(value.split(' ').join('+'))
+        addHistoryList(value, generateId())
+        // location.href = searchUrl.concat(value.split(' ').join('+'))
     }
 })
