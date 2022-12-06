@@ -1,0 +1,10 @@
+
+@media (max-width: 813px) {
+    .info__content {
+        justify-content: center;
+    }
+    .about__info, .config__info {
+        justify-content: center;
+        row-gap: 10px;
+    }
+}
