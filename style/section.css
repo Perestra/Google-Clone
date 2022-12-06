@@ -14,8 +14,11 @@
 }
 
 .logo__content {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: auto;
+
+    padding: 0 20px;
 
     background-image: url(/assets/google-logo.png);
     background-repeat: no-repeat;
@@ -26,8 +29,11 @@
 .search__section {
     position: relative;
 
-    width: 548px;
+    width: 100%;
+    max-width: 548px;
     height: 46px;
+
+    padding: 0 20px;
 
     transition: all 0.2s;
 }
