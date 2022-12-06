@@ -3,7 +3,7 @@
 const searchUrl = 'https://www.google.com.br/search?q='
 const search = document.querySelector('.input__form')
 
-const historyList = JSON.parse(localStorage.getItem('Busca')) || []
+let historyList = JSON.parse(localStorage.getItem('Busca')) || []
 const History = {'SearchName': search.value}
 
 
@@ -56,17 +56,26 @@ function handleOnBlur() {
 function handleKeyDown(event) {
     if(event.key === 'Enter') {
         const value = event.target.value
-        createSearch(value)
-        historyList.push(value)
-        location.href = searchUrl.concat(value.split(' ').join('+'))
-        localStorage.setItem('Busca', JSON.stringify(historyList))
-        search.value = '' 
+        const id = generateId()
+        addHistoryList(value, id)
+        // location.href = searchUrl.concat(value.split(' ').join('+'))
     }
 }
 
 
 const searchHistory = document.querySelector('.search_history')
+function generateId() {
+    return Math.round((Math.random() * 100) * (new Date()).getTime())
+}
+function addHistoryList(value, id) {
+    createSearch(value, id)
+    historyList.push({ id, value })
+    localStorage.setItem('Busca', JSON.stringify(historyList))
+    search.value = '' 
+}
 function deleteSearch(search) {
+    historyList = historyList.filter(({ id }) => +id !== +search.dataset.id)
+    localStorage.setItem('Busca', JSON.stringify(historyList))
     search.remove()
 }
 function createDeleteButton() {
@@ -81,9 +90,10 @@ function createDeleteButton() {
 
     return button
 }
-function createSearch(search) {
+function createSearch(search, id) {
     const li = document.createElement('li')
     li.classList.add('search')
+    li.dataset.id = id
 
     const anchor = document.createElement('a')
     const clockIcon = '<i class="fa-regular fa-clock"></i>'
@@ -100,8 +110,8 @@ function createSearch(search) {
 
     return li
 }
-historyList.forEach(value => {
-    createSearch(value)
+historyList.forEach(({ value, id }) => {
+    createSearch(value, id)
 })
 
  
