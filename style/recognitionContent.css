@@ -1,0 +1,70 @@
+
+
+.recognition_container {
+    background: var(--bgBody);
+    position: absolute;
+    z-index: 1;
+
+    width: 100%;
+    height: 100vh;
+
+    display: none;
+}
+.recognition_container.active {
+    display: block;
+}
+.recognition__header {
+    width: 100%;
+    height: auto;
+
+    text-align: end;
+    padding: 1rem 2rem;
+}
+.recognition__header button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+}
+.fa-xmark {
+    font-size: 22px;
+    color: var(--menuIcon);
+}
+
+
+.recognition__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 100%;
+    height: auto;
+
+    margin-top: 15rem;
+}
+.recognition__section h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    color: var(--searchIcon);
+}
+.svg_icon {
+    width: 170px;
+    height: 170px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+    border-radius: 50%;
+}
+.recognition__section svg {
+    width: 140px;
+    height: 140px;
+
+    padding: 3rem;
+    background: #ea4335;
+
+    border-radius: 50%;
+}
