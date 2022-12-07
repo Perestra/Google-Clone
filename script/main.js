@@ -53,12 +53,20 @@ function handleOnFocus() {
 function handleOnBlur() {
     contentSection.classList.remove('active')
 }
-function handleKeyDown(event) {
-    if(event.key === 'Enter') {
-        const value = event.target.value
-        const id = generateId()
-        addHistoryList(value, id)
-        // location.href = searchUrl.concat(value.split(' ').join('+'))
+function handleKeyDown(search) {
+    const value = search
+    const id = generateId()
+    addHistoryList(value, id)
+    // location.href = searchUrl.concat(value.split(' ').join('+'))
+}
+
+
+const form = document.querySelector('.search__section')
+form.onsubmit = e => {
+    e.preventDefault()
+
+    if(search.value.trim() !== '') {
+        handleKeyDown(search.value)
     }
 }
 
@@ -83,6 +91,7 @@ function createDeleteButton() {
     button.id = 'deleteButton'
     button.setAttribute('value', 'Excluir')
     button.innerHTML = 'Excluir'
+    button.type = 'button'
 
     button.addEventListener('click', function() {
         deleteSearch(this.parentElement)
