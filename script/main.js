@@ -57,7 +57,7 @@ function handleKeyDown(search) {
     const value = search
     const id = generateId()
     addHistoryList(value, id)
-    // location.href = searchUrl.concat(value.split(' ').join('+'))
+    location.href = searchUrl.concat(value.split(' ').join('+'))
 }
 
 
