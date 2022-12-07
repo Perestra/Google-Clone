@@ -8,3 +8,13 @@
         row-gap: 10px;
     }
 }
+@media (max-width: 500px) {
+    .recognition__section {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    #request {
+        margin: 0 2rem;
+        text-align: center;
+    }
+}
